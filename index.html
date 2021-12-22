@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
     <title>안녕하세요!!</title>
 </head>
 <body style="
@@ -12,9 +13,11 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font: 5em sans-serif;
 ">
-    <h1>안녕하세요~😊</h1>
-    <h2>Spear 입니다. </h2>
-    <p>이번 한 달 동안 잘 부탑드립니다.👍👍</p>
+    <div class="typing-txt" onclick="changeText(0, '각코는 사랑입니다.')">모<span class="typing"></span></div>
+    <div class="typing-txt" onclick="changeText(1, '잡고 열심히 만들었습니다!')">각<span class="typing"></span></div>
+    <div class="typing-txt" onclick="changeText(2, '딩 하는 건 너무 재밌네요!!')">코<span class="typing"></span></div>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
