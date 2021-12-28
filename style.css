@@ -1,6 +1,16 @@
-.btn{
-  background-color: aliceblue;
-  padding: 10px;
-  margin:0 130px;
+body{
+  display: flex; 
+  padding-top: 15%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font: 5em sans-serif;
+}
+
+
+span{
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  font-size: 3rem;
   cursor: pointer;
 }

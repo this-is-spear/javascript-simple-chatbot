@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="./style.css"/>
     <title>안녕하세요!!</title>
 </head>
-<body style="
-    display: flex; 
-    padding-top: 15%;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font: 5em sans-serif;
-">
-    <h1>이번에는 자바스크립트를 이용해 사칙연산을 해보겠습니다. 😊😊</h1>
+<body>
+    <p id="time">00:00:00</p>
+    <div>
+        <span class="start" onclick="startClock()">시작</span>
+        <span onclick="stopClock()">멈춤</span>
+        <span onclick="resetClock()">초기화</span>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
