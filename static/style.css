@@ -6,11 +6,15 @@ body{
   text-align: center;
   font: 5em sans-serif;
 }
-
-
+aquamarine
+aliceblue
+antiquewhite
+aqua 
 span{
   background-color: antiquewhite;
+
   border-radius: 1rem;
   font-size: 3rem;
   cursor: pointer;
 }
+
