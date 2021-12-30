@@ -2,19 +2,48 @@ body{
   display: flex; 
   padding-top: 15%;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font: 5em sans-serif;
+  font: 1em sans-serif;
+  margin: 0 20%;
 }
-aquamarine
-aliceblue
-antiquewhite
-aqua 
+
 span{
   background-color: antiquewhite;
-
-  border-radius: 1rem;
-  font-size: 3rem;
+  margin: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
+.spiderman{
+  position: absolute;
+  top: auto;
+  margin: 0 20%;
+  display: none;
+
+}
+
+.avengers{
+  position: absolute;
+  top: auto;
+  margin: 0 20%;
+  display: none;
+}
+
+.inception{
+  position: absolute;
+  top: auto;
+  margin: 0 20%;
+  display: none;
+}
+
+.item{
+  justify-content: center;
+}
+
+.list{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
