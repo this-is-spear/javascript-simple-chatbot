@@ -1,49 +1,44 @@
 body{
-  display: flex; 
+  background-color: black;
   padding-top: 15%;
-  flex-direction: column;
-  font: 1em sans-serif;
-  margin: 0 20%;
+  font: 2em sans-serif;
+  left: 50%;
+  position: relative;
+  align-items: center;
 }
 
-span{
-  background-color: antiquewhite;
-  margin: 2rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.spiderman{
-  position: absolute;
-  top: auto;
-  margin: 0 20%;
-  display: none;
-
-}
-
-.avengers{
-  position: absolute;
-  top: auto;
-  margin: 0 20%;
-  display: none;
-}
-
-.inception{
-  position: absolute;
-  top: auto;
-  margin: 0 20%;
-  display: none;
-}
-
-.item{
-  justify-content: center;
-}
-
-.list{
-  position: absolute;
-  top: 20%;
+#number{
+  color: white;
+  background-color: darkcyan;
+  margin: 5em 0;
+  padding: 1em 2em;
+  border-radius: 1em;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
+
+}
+
+#name{
+  color: white;
+  display: none;
+  margin: 5em 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#click_event{
+  color: white;
+  font-size: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: darkcyan;
+  padding: 1em 2em;
+  border-radius: 1em;
+  border: 0;
+}
+
+#click_event:hover{
+  background-color: green;
+  transition: all 0.5s;
 }

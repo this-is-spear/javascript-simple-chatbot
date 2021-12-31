@@ -1,29 +1,22 @@
+let click_event = document.getElementById('click_event');
+let nameA = document.getElementById('name');
+let numberA = document.getElementById('number')
 
-let i;
+click_event.addEventListener('click', click_me);
 
-function avengers() {
-    console.log('avergers');
-    if(i !=  undefined){
-        i.style.display = 'none';
-    }
-    i = document.querySelector(".avengers");
-    i.style.display = 'inline-block';
+function click_me(){
+    console.log('click')
+    click_event.style.display = "none";
+    open_name();
+    open_number();
 }
 
-function spiderman() {
-    console.log('spiderman');
-    if(i !=  undefined){
-        i.style.display = 'none';
-    }
-    i = document.querySelector(".spiderman");
-    i.style.display = 'inline-block';
+function open_name() {
+    nameA.innerHTML = "Spear"
+    nameA.style.display = "inline-block"
 }
 
-function inception() {
-    console.log('inception');
-    if(i !=  undefined){
-        i.style.display = 'none';
-    }
-    i = document.querySelector(".inception");
-    i.style.display = 'inline-block';
+function open_number() {
+    numberA.innerHTML = "010 - xxxx - xxxx"
+    numberA.style.display = "inline-block"
 }
