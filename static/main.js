@@ -1,29 +1,26 @@
-
-let i;
-
-function avengers() {
-    console.log('avergers');
-    if(i !=  undefined){
-        i.style.display = 'none';
-    }
-    i = document.querySelector(".avengers");
-    i.style.display = 'inline-block';
+let says = document.querySelector(".cat_says")
+let message = ""
+console.log()
+function check_text() {
+    let value = document.getElementById("console").value;
+    console.log(value);
+    message = value
+    apply_chat();
 }
 
-function spiderman() {
-    console.log('spiderman');
-    if(i !=  undefined){
-        i.style.display = 'none';
-    }
-    i = document.querySelector(".spiderman");
-    i.style.display = 'inline-block';
+function apply_chat() {
+    say_logic()
+    says.innerHTML = message;
 }
 
-function inception() {
-    console.log('inception');
-    if(i !=  undefined){
-        i.style.display = 'none';
+function say_logic() {
+    if(message.length == 1){
+        message = "냐~!"
+    }else if (message.length % 2 == 1) {
+        message = "냐" + "아".repeat(message.length - 2) 
+                    + "~".repeat(Math.ceil((Math.random()*10)%10)) 
+                    + "앙~!"
+    }else{
+        message = "냐아 ".repeat(message.length) + "~" + "!".repeat(Math.ceil((Math.random()*10)%10)) 
     }
-    i = document.querySelector(".inception");
-    i.style.display = 'inline-block';
 }
