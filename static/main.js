@@ -1,22 +1,26 @@
-let click_event = document.getElementById('click_event');
-let nameA = document.getElementById('name');
-let numberA = document.getElementById('number')
-
-click_event.addEventListener('click', click_me);
-
-function click_me(){
-    console.log('click')
-    click_event.style.display = "none";
-    open_name();
-    open_number();
+let says = document.querySelector(".cat_says")
+let message = ""
+console.log()
+function check_text() {
+    let value = document.getElementById("console").value;
+    console.log(value);
+    message = value
+    apply_chat();
 }
 
-function open_name() {
-    nameA.innerHTML = "Spear"
-    nameA.style.display = "inline-block"
+function apply_chat() {
+    say_logic()
+    says.innerHTML = message;
 }
 
-function open_number() {
-    numberA.innerHTML = "010 - xxxx - xxxx"
-    numberA.style.display = "inline-block"
+function say_logic() {
+    if(message.length == 1){
+        message = "냐~!"
+    }else if (message.length % 2 == 1) {
+        message = "냐" + "아".repeat(message.length - 2) 
+                    + "~".repeat(Math.ceil((Math.random()*10)%10)) 
+                    + "앙~!"
+    }else{
+        message = "냐아 ".repeat(message.length) + "~" + "!".repeat(Math.ceil((Math.random()*10)%10)) 
+    }
 }
