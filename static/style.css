@@ -19,7 +19,7 @@
   width: 150px;
   height: 150px;
   margin: auto;
-  background-image: url("../static/logo.png");
+  background-image: url("https://cdn.emojidex.com/emoji/seal/kawaii_pikachu.png");
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 30px;
@@ -1606,4 +1606,11 @@
     );
     transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+}
+
+.emojidex-emoji{
+  position: absolute;
+}
+
+.cat{
 }
