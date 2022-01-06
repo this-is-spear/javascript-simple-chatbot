@@ -1,5 +1,8 @@
 let says = document.querySelector(".cat_says")
 let body = document.body
+var app = document.getElementById("typed");
+
+
 function check_text() {
     // body.style.backgroundColor="white"
     says.innerHTML = ""
@@ -25,6 +28,17 @@ function apply_chat(message) {
 }
 
 function say_logic(message) {
+    let typewriter = new Typewriter(app, { loop: false, });
+    
+    typewriter
+    .typeString("삐까츄가 알아듣지 못한 것 같다.")
+    .pauseFor(1300)
+    .deleteAll()
+    .typeString("다시 한 번 말해보자.")
+    .pauseFor(2500)
+    .start();
+
+
     if(message.length == 1){
         message = "냐~!";
     }else if (message.length % 2 == 1) {

@@ -77,3 +77,24 @@ let click_event = document.getElementById('click_event');
 click_event.addEventListener('click', click_me);
 ```
 
+## 2021-01-06
+
+CDN 방식으로 저장되어 있는 라이브러리를 들고와 Typewriter() 객체를 사용했다.
+
+```html
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+```
+
+
+```javascript
+    let typewriter = new Typewriter(app, { loop: false, });
+    
+    typewriter
+    .typeString("삐까츄가 알아듣지 못한 것 같다.")
+    .pauseFor(1300)
+    .deleteAll()
+    .typeString("다시 한 번 말해보자.")
+    .pauseFor(2500)
+    .start();
+```
+
