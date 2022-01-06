@@ -8,11 +8,11 @@
 
 .layout {
   position: absolute;
-  left: 30%;
   bottom: 50px;
   width: 500px;
   height: 500px;
   margin: auto;
+  margin-left: calc((100% - 500px) / 2);
 }
 
 .cat {
@@ -1613,4 +1613,8 @@
 }
 
 .cat{
+}
+
+#typed{
+  text-align: center;
 }
